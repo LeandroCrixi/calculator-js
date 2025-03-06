@@ -1,0 +1,16 @@
+main{
+    justify-items: center;
+}
+
+#calculator{
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+}
+
+#display{
+    margin: 10px;
+    padding: 10px 0;
+    width: 90%;
+    border-radius: 30px;
+}
