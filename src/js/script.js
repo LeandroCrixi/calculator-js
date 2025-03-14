@@ -1,4 +1,6 @@
-import { getData } from "./modules/api.js";
-import { processData } from "./modules/dom.js"; 
+import { displayingContent, currentYear } from "./modules/dom.js";
+import { calculate } from "./modules/events.js";
 
-getData(processData)
+// getNumber()
+displayingContent(calculate)
+currentYear()

@@ -1,19 +1,12 @@
-const processData = (data) => {
-    const calculator = document.getElementById('calculator')
-    const display = document.createElement('input')
-    display.classList.add('display')
-    display.id = 'display'
-    calculator.appendChild(display)
-
-    const dataArray = Object.values(data.digits)
-
-    dataArray.forEach((element) => {
-        const button = document.createElement('button')
-        button.textContent = element
-        calculator.appendChild(button)
-    });
-
-    
+const displayingContent = (callback) => {
+    const display = document.querySelector('.innerDisplay')
+    callback(display)
 }
 
-export { processData }
+const currentYear = () => {
+    const year = new Date().getFullYear();
+    const current_year = document.getElementById('current-year')
+    current_year.textContent = year
+}
+
+export { displayingContent, currentYear }
